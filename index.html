@@ -48,7 +48,7 @@
                 "Mika"
             ];
 
-            const reload = () => document.querySelector('textarea').value = shuffle(team).join('\r');
+            const reload = () => document.querySelector('textarea').value = `\`\`\`${shuffle(team).join('\r')}\`\`\``;
             const copyToClipboard = str => {
                     const el = document.createElement('textarea');
                     el.value = str;
